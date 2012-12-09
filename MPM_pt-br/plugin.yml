@@ -1,0 +1,7 @@
+name: MPM
+main: com.mortella.pm.MyPlugin
+version: 1.0
+commands:
+   mp:
+      description: Mande um MP a um jogador.
+      usage: /mp <jogador>
