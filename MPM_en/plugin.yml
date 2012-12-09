@@ -1,0 +1,7 @@
+name: MPM
+main: com.mortella.pm.MyPlugin
+version: 1.0
+commands:
+   pm:
+      description: Send PM to a player!.
+      usage: /pm <player> <message>
