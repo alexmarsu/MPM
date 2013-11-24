@@ -28,8 +28,8 @@ public class MyPlugin extends JavaPlugin{
 	    	  alvo.sendMessage(ChatColor.YELLOW + "["+ ChatColor.MAGIC + sender.getName() + ChatColor.YELLOW + "-PM]" + ChatColor.GREEN + mensagem);  
 	    	  }
 	          sender.sendMessage(ChatColor.YELLOW + "PM Sent!");
-	          log.info("[MPM] The player " + sender.getName() + " sent PM to " + alvo.getDisplayName());
-	          log.info("[MPM] Message:" +  mensagem);
+	          getLogger().info("[MPM] The player " + sender.getName() + " sent PM to " + alvo.getDisplayName());
+	          getLogger().info("[MPM] Message:" +  mensagem);
 	        }else{
 	        	sender.sendMessage(ChatColor.RED + "Error! Cannot find that user.");
 	        }
