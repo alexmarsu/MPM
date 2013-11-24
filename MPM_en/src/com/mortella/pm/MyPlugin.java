@@ -9,9 +9,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.mortella.pm.Funcs;
 
 public class MyPlugin extends JavaPlugin{
-	public final Logger log = Logger.getLogger("Minecraft");
 	public void onEnable(){
-	 log.info("[MPM] v1.1 Plugin Enabled!");	
+	 getLogger().info("Plugin Enabled!");	
 }
 	
 	
@@ -45,5 +44,6 @@ public class MyPlugin extends JavaPlugin{
 	}
 	    return true;
 
-	}	
+	}
+	
 }
