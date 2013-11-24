@@ -1,6 +1,6 @@
 package com.mortella.pm;
 
-import java.util.logging.Logger;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -8,10 +8,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import com.mortella.pm.Funcs;
 
-public class MyPlugin extends JavaPlugin{
-	public final Logger log = Logger.getLogger("Minecraft");
+public final class MyPlugin extends JavaPlugin{
 	public void onEnable(){
-	 log.info("[MPM] v1.1 Plugin Ativado!");	
+	 getLogger().info("Plugin Ativado!");	
 }
 	
 	
@@ -29,8 +28,8 @@ public class MyPlugin extends JavaPlugin{
 	        	 alvo.sendMessage(ChatColor.YELLOW + "["+ ChatColor.MAGIC + sender.getName() + ChatColor.YELLOW + "-MP]" + ChatColor.GREEN + mensagem);
 	         }    	  	          
 	          sender.sendMessage(ChatColor.YELLOW + "MP Enviada!");
-	          log.info("[MPM] O jogador " + sender.getName() + " enviou MP para " + alvo.getDisplayName());
-	          log.info("[MPM] Menssagem:" +  mensagem);
+	          getLogger().info("O jogador " + sender.getName() + " enviou MP para " + alvo.getDisplayName());
+	          getLogger().info("Menssagem:" + mensagem);
 	        }else{
 	        	sender.sendMessage(ChatColor.RED + "Erro! Não foi possivel encontrar o jogador.");
 	        }
@@ -46,5 +45,6 @@ public class MyPlugin extends JavaPlugin{
 	}
 	    return true;
 
-	}	
+	}
+	
 }
